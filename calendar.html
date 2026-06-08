@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habit Tracker – Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  
+
+<!-- ───── Sidebar ───── -->
+<aside class="sidebar">
+  <div class="sidebar__brand">
+    <span class="brand-icon">📋</span>
+    <span class="brand-name">Habit Tracker</span>
+  </div>
+
+  <nav class="sidebar__nav">
+    <a href="#" class="nav-item"><span class="nav-icon">🏠</span> Dashboard</a>
+    <a href="#" class="nav-item"><span class="nav-icon">✅</span> Habits</a>
+    <a href="#" class="nav-item active"><span class="nav-icon">📅</span> Calendar</a>
+    <a href="#" class="nav-item"><span class="nav-icon">📈</span> Progress</a>
+    <a href="#" class="nav-item"><span class="nav-icon">📊</span> Statistics</a>
+    <a href="#" class="nav-item"><span class="nav-icon">👤</span> Profile</a>
+  </nav>
+</aside>
+
+<!-- ───── Main Content ───── -->
+<main class="main">
+
+  <!-- Calendar Panel -->
+  <section class="calendar-panel">
+    <div class="calendar-header">
+      <div class="month-nav">
+        <h2 id="monthTitle">May 2024</h2>
+        <button class="arrow-btn" id="prevMonth">&#8249;</button>
+        <button class="arrow-btn" id="nextMonth">&#8250;</button>
+      </div>
+      <button class="today-btn" id="todayBtn">Today</button>
+    </div>
+
+    <table class="calendar-grid" id="calendarGrid">
+      <thead>
+        <tr>
+          <th>Sun</th><th>Mon</th><th>Tue</th>
+          <th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody"></tbody>
+    </table>
+  </section>
+
+  <!-- Daily Habits Panel -->
+  <aside class="habits-panel">
+    <h3 id="selectedDateTitle">May 15, 2024</h3>
+    <p class="habits-subtitle">Today's Habits</p>
+    <div class="habit-list" id="habitList"></div>
+  </aside>
+
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
